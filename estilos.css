@@ -1,0 +1,157 @@
+*,::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Poppins','sans-serif';
+    font-size: 62.5%;
+}
+body{
+    background: linear-gradient(#607D8B, #80BEC5,#607D8B);
+    color: rgb(200, 200,200,.9);
+}
+
+.container{
+    width: 90vw;
+    height: fit-content;
+    margin: 2rem auto;
+    background-color: #fdfeffa1;
+    border-radius: 10px;
+}
+.container h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.3rem;
+    margin-top: 8%;
+    color: #7e838aa8;
+}
+.formulario-datos{
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+}
+.formulario-datos input{
+    margin: 1rem 0rem;
+    line-height: 3rem;
+    background: none;
+    outline: 0;
+    border: 0;
+    color: #282829b6;
+}
+.formulario-datos input:active{
+    border-bottom: 1px solid royalblue;
+}
+.formulario-datos input:focus{
+    border-bottom: 1px solid royalblue;
+}
+
+.formulario-datos button{
+    margin: 1rem 0rem;
+    background-color: dodgerblue;
+    border: 0;
+    outline: 0;
+    height: 3rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+}
+.listado-tareas{
+    display:flex;
+    flex-direction: column;
+}
+.tarea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 5rem;
+    color: #1a1a1fb6;
+}
+.tareaVacio{
+    height: 5rem;
+    color: #1a1a1fb6;
+}
+.icono{
+    color: tomato;
+    cursor: pointer;
+}
+p{
+    font-size: 1.4rem;
+}
+h1{
+    font-size: 2rem;
+    color: #7e838aa8;
+}
+
+@media screen and (max-width: 579px) {
+    .formulario-datos{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 399px) {
+    .formulario-datos{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 355px) {
+    .formulario-datos{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 307px) {
+    .formulario-datos{
+        width: 95%;
+    }
+    .container h2{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 328px) {
+    .formulario-datos{
+        width: 100%;
+    }
+    .container{
+        width: 95vw;
+    }
+h1{
+    margin-bottom: -10%;
+}
+p{
+    font-size: 1.2rem;
+}
+.barra{
+    margin-top: 10%;
+}
+.formulario-datos button{
+    margin: 1rem 1rem;}
+}
+@media screen and (max-width: 240px) {
+    .formulario-datos{
+        width: 100%;
+    }
+    .container{
+        width: 95vw;
+    }
+h1{
+    margin-bottom: -10%;
+}
+p{
+    font-size: 1rem;
+}
+h3{
+    font-size: 1rem;
+}
+.barra{
+    margin-top: 10%;
+}
+.formulario-datos button{
+    margin: 1rem 1rem;}
+}
+@media screen and (min-width: 800px) {
+    .container{
+        width: 76vw;
+    }
+}
